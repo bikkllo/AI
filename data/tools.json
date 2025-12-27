@@ -1,0 +1,911 @@
+{
+  "categories": [
+    {
+      "id": "text",
+      "name": "文本",
+      "icon": "📝",
+      "description": "AI文本处理工具，包括写作助手、翻译工具、内容生成等",
+      "color": "#FF6B35",
+      "tools": [
+        {
+          "name": "ChatGPT",
+          "description": "OpenAI开发的强大对话AI，支持多种文本任务",
+          "url": "https://chat.openai.com",
+          "recommended": true,
+          "level": "beginner",
+          "tags": ["对话", "写作", "翻译"],
+          "pros": ["理解能力强", "支持多语言", "响应速度快", "免费版本可用"],
+          "cons": ["知识截止时间限制", "无法联网搜索", "可能产生幻觉"],
+          "learningResources": [
+            "OpenAI官方文档: https://platform.openai.com/docs",
+            "ChatGPT使用指南: https://help.openai.com/en/collections/3742473-chatgpt",
+            "提示工程教程: https://www.promptingguide.ai/"
+          ]
+        },
+        {
+          "name": "Claude",
+          "description": "Anthropic开发的AI助手，擅长长文本处理和分析",
+          "url": "https://claude.ai",
+          "recommended": true,
+          "level": "beginner",
+          "tags": ["对话", "分析", "写作"],
+          "pros": ["长文本处理能力强", "安全性高", "逻辑推理能力强", "支持文件上传"],
+          "cons": ["使用限制较多", "响应速度较慢", "中文支持一般"],
+          "learningResources": [
+            "Claude官方文档: https://docs.anthropic.com/claude/docs",
+            "Anthropic安全研究: https://www.anthropic.com/research",
+            "Claude使用技巧: https://help.anthropic.com/"
+          ]
+        }
+,
+        {
+          "name": "文心一言",
+          "description": "百度开发的中文AI对话系统，专为中文用户优化",
+          "url": "https://yiyan.baidu.com",
+          "recommended": true,
+          "level": "beginner",
+          "tags": ["中文", "对话", "创作"],
+          "pros": ["中文理解能力强", "本土化程度高", "免费使用", "支持语音交互"],
+          "cons": ["国际化程度低", "创新性相对不足", "依赖网络连接"],
+          "learningResources": [
+            "文心一言官方帮助: https://yiyan.baidu.com/help",
+            "百度AI开放平台: https://ai.baidu.com/",
+            "文心大模型技术解析: https://wenxin.baidu.com/"
+          ]
+        },
+        {
+          "name": "Gemini",
+          "description": "Google开发的多模态AI助手，支持文本、图像、代码等",
+          "url": "https://gemini.google.com",
+          "recommended": true,
+          "level": "beginner",
+          "tags": ["多模态", "搜索", "编程"],
+          "pros": ["多模态能力强", "与Google服务集成", "实时信息获取", "免费版本功能丰富"],
+          "cons": ["隐私担忧", "在某些地区不可用", "响应有时不稳定"],
+          "learningResources": [
+            "Gemini官方文档: https://ai.google.dev/",
+            "Google AI博客: https://blog.google/technology/ai/",
+            "Gemini API指南: https://ai.google.dev/docs"
+          ]
+        },
+        {
+          "name": "Notion AI",
+          "description": "集成在Notion中的AI写作助手，专注于文档和笔记",
+          "url": "https://www.notion.so/product/ai",
+          "recommended": false,
+          "level": "intermediate",
+          "tags": ["写作", "笔记", "整理"],
+          "pros": ["与Notion深度集成", "文档处理能力强", "团队协作友好", "模板丰富"],
+          "cons": ["需要Notion订阅", "功能相对单一", "学习成本较高"],
+          "learningResources": [
+            "Notion AI官方指南: https://www.notion.so/help/notion-ai",
+            "Notion模板库: https://www.notion.so/templates",
+            "生产力工作流教程: https://www.notion.so/guides"
+          ]
+        },
+        {
+          "name": "Grammarly",
+          "description": "AI驱动的英文语法和写作改进工具",
+          "url": "https://www.grammarly.com",
+          "recommended": true,
+          "level": "beginner",
+          "tags": ["语法", "英文", "校对"],
+          "pros": ["语法检查准确", "写作建议实用", "多平台支持", "实时检查"],
+          "cons": ["主要支持英文", "高级功能需付费", "有时建议过于保守"],
+          "learningResources": [
+            "Grammarly写作指南: https://www.grammarly.com/blog/",
+            "英文写作技巧: https://www.grammarly.com/handbook/",
+            "商务写作课程: https://www.grammarly.com/business/learn/"
+          ]
+        },
+        {
+          "name": "Jasper",
+          "description": "专业的AI内容创作平台，适合营销和商业写作",
+          "url": "https://www.jasper.ai",
+          "recommended": false,
+          "level": "intermediate",
+          "tags": ["营销", "内容创作", "商业"],
+          "pros": ["营销文案专业", "模板丰富", "品牌声音一致性", "团队协作功能"],
+          "cons": ["价格较高", "学习曲线陡峭", "主要面向企业用户"],
+          "learningResources": [
+            "Jasper学院: https://www.jasper.ai/academy",
+            "内容营销指南: https://www.jasper.ai/blog",
+            "AI写作最佳实践: https://www.jasper.ai/resources"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "image",
+      "name": "图像",
+      "icon": "🖼️",
+      "description": "AI图像生成、编辑和处理工具，让创意变为现实",
+      "color": "#F7931E",
+      "tools": [
+        {
+          "name": "Midjourney",
+          "description": "顶级AI图像生成工具，艺术质量极高",
+          "url": "https://www.midjourney.com",
+          "recommended": true,
+          "level": "intermediate",
+          "tags": ["图像生成", "艺术", "创意"],
+          "pros": ["艺术质量顶级", "风格多样化", "社区活跃", "持续更新"],
+          "cons": ["需要Discord使用", "价格较高", "学习曲线陡峭", "生成速度较慢"],
+          "learningResources": [
+            "Midjourney官方文档: https://docs.midjourney.com/",
+            "提示词指南: https://midjourney.gitbook.io/docs/",
+            "艺术风格参考: https://github.com/willwulfken/MidJourney-Styles-and-Keywords-Reference"
+          ]
+        },
+        {
+          "name": "DALL-E 3",
+          "description": "OpenAI的图像生成模型，理解能力强",
+          "url": "https://openai.com/dall-e-3",
+          "recommended": true,
+          "level": "beginner",
+          "tags": ["图像生成", "创意", "设计"],
+          "pros": ["文本理解能力强", "安全性高", "易于使用", "与ChatGPT集成"],
+          "cons": ["生成速度较慢", "风格相对单一", "价格较高", "使用限制多"],
+          "learningResources": [
+            "DALL-E 3官方指南: https://help.openai.com/en/articles/7516846-dall-e-3-guide",
+            "图像生成最佳实践: https://platform.openai.com/docs/guides/images",
+            "创意提示词技巧: https://www.promptingguide.ai/applications/generating_images"
+          ]
+        },
+        {
+          "name": "Stable Diffusion",
+          "description": "开源的图像生成模型，可本地部署",
+          "url": "https://stability.ai/stable-diffusion",
+          "recommended": true,
+          "level": "advanced",
+          "tags": ["开源", "本地部署", "定制"],
+          "pros": ["完全免费", "可本地运行", "高度可定制", "社区资源丰富"],
+          "cons": ["技术门槛高", "需要强大硬件", "设置复杂", "质量不稳定"],
+          "learningResources": [
+            "Stable Diffusion WebUI: https://github.com/AUTOMATIC1111/stable-diffusion-webui",
+            "模型下载: https://huggingface.co/models?pipeline_tag=text-to-image",
+            "社区教程: https://stable-diffusion-art.com/"
+          ]
+        },
+        {
+          "name": "Adobe Firefly",
+          "description": "Adobe的AI图像生成工具，商业使用安全",
+          "url": "https://firefly.adobe.com",
+          "recommended": true,
+          "level": "beginner",
+          "tags": ["商业安全", "设计", "Adobe"],
+          "pros": ["商业使用安全", "与Adobe软件集成", "版权清晰", "专业设计功能"],
+          "cons": ["功能相对有限", "需要Adobe账户", "创意性不如竞品", "主要面向设计师"],
+          "learningResources": [
+            "Adobe Firefly教程: https://helpx.adobe.com/firefly/",
+            "创意云集成指南: https://www.adobe.com/products/firefly/",
+            "商业使用指南: https://helpx.adobe.com/firefly/using/firefly-commercial-usage.html"
+          ]
+        },
+        {
+          "name": "Leonardo AI",
+          "description": "专注于游戏和创意资产的AI图像生成平台",
+          "url": "https://leonardo.ai",
+          "recommended": false,
+          "level": "intermediate",
+          "tags": ["游戏", "资产", "创意"],
+          "pros": ["游戏资产专业", "模型训练功能", "批量生成", "社区模型丰富"],
+          "cons": ["专业性较强", "学习成本高", "免费额度有限", "界面复杂"],
+          "learningResources": [
+            "Leonardo AI学院: https://docs.leonardo.ai/",
+            "游戏资产制作教程: https://leonardo.ai/blog",
+            "模型训练指南: https://docs.leonardo.ai/docs/training-your-own-models"
+          ]
+        },
+        {
+          "name": "Canva AI",
+          "description": "集成AI功能的在线设计平台",
+          "url": "https://www.canva.com/ai-image-generator/",
+          "recommended": true,
+          "level": "beginner",
+          "tags": ["设计", "模板", "易用"],
+          "pros": ["操作简单", "模板丰富", "设计工具完整", "团队协作"],
+          "cons": ["AI功能有限", "创意性不足", "高级功能需付费", "依赖网络"],
+          "learningResources": [
+            "Canva设计学院: https://www.canva.com/designschool/",
+            "AI功能教程: https://www.canva.com/help/magic-design/",
+            "品牌设计指南: https://www.canva.com/learn/branding/"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "video",
+      "name": "视频",
+      "icon": "🎬",
+      "description": "AI视频生成、编辑和处理工具，轻松制作专业视频",
+      "color": "#FF8C42",
+      "tools": [
+        {
+          "name": "Runway",
+          "description": "专业的AI视频生成和编辑平台",
+          "url": "https://runwayml.com",
+          "recommended": true,
+          "level": "intermediate",
+          "tags": ["视频生成", "编辑", "特效"],
+          "pros": ["功能全面", "质量高", "创新性强", "专业工具丰富"],
+          "cons": ["价格昂贵", "学习成本高", "生成时间长", "需要强大硬件"],
+          "learningResources": [
+            "Runway学院: https://runwayml.com/academy/",
+            "AI视频制作教程: https://help.runwayml.com/",
+            "创意工作流指南: https://runwayml.com/blog/"
+          ]
+        },
+        {
+          "name": "Pika Labs",
+          "description": "AI视频生成工具，支持文本转视频",
+          "url": "https://pika.art",
+          "recommended": true,
+          "level": "beginner",
+          "tags": ["文本转视频", "创意", "短视频"],
+          "pros": ["操作简单", "生成速度快", "效果自然", "免费试用"],
+          "cons": ["功能相对简单", "视频长度限制", "质量不够稳定", "商业使用限制"],
+          "learningResources": [
+            "Pika使用指南: https://docs.pika.art/",
+            "视频生成技巧: https://pika.art/blog",
+            "社区案例分享: https://discord.gg/pika"
+          ]
+        },
+        {
+          "name": "Sora",
+          "description": "OpenAI的文本转视频模型，质量极高",
+          "url": "https://openai.com/sora",
+          "recommended": true,
+          "level": "beginner",
+          "tags": ["文本转视频", "高质量", "OpenAI"],
+          "pros": ["视频质量顶级", "物理规律准确", "时长较长", "细节丰富"],
+          "cons": ["尚未公开发布", "预计价格高", "生成时间长", "硬件要求高"],
+          "learningResources": [
+            "Sora技术报告: https://openai.com/research/video-generation-models-as-world-simulators",
+            "视频生成原理: https://openai.com/sora/technical-report/",
+            "应用案例分析: https://openai.com/sora/"
+          ]
+        },
+        {
+          "name": "Synthesia",
+          "description": "AI虚拟主播视频制作平台",
+          "url": "https://www.synthesia.io",
+          "recommended": true,
+          "level": "intermediate",
+          "tags": ["虚拟主播", "培训", "商业"],
+          "pros": ["虚拟主播专业", "多语言支持", "商业化成熟", "模板丰富"],
+          "cons": ["价格较高", "创意性有限", "依赖模板", "个性化不足"],
+          "learningResources": [
+            "Synthesia学院: https://help.synthesia.io/",
+            "企业培训案例: https://www.synthesia.io/case-studies",
+            "多语言视频制作: https://www.synthesia.io/features/languages"
+          ]
+        },
+        {
+          "name": "Descript",
+          "description": "AI驱动的视频编辑和转录工具",
+          "url": "https://www.descript.com",
+          "recommended": true,
+          "level": "intermediate",
+          "tags": ["编辑", "转录", "播客"],
+          "pros": ["文本编辑视频", "转录准确", "协作功能强", "学习曲线平缓"],
+          "cons": ["主要面向播客", "AI功能有限", "导出选项少", "价格较高"],
+          "learningResources": [
+            "Descript大学: https://www.descript.com/descript-university",
+            "播客制作指南: https://www.descript.com/blog/podcasting",
+            "视频编辑教程: https://help.descript.com/"
+          ]
+        },
+        {
+          "name": "InVideo AI",
+          "description": "AI驱动的在线视频制作平台",
+          "url": "https://invideo.io/ai/",
+          "recommended": false,
+          "level": "beginner",
+          "tags": ["在线编辑", "模板", "营销"],
+          "pros": ["模板丰富", "操作简单", "快速生成", "价格合理"],
+          "cons": ["创意性有限", "质量一般", "品牌水印", "依赖模板"],
+          "learningResources": [
+            "InVideo学院: https://invideo.io/academy/",
+            "营销视频制作: https://invideo.io/blog/",
+            "模板使用指南: https://help.invideo.io/"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "audio",
+      "name": "音频",
+      "icon": "🎵",
+      "description": "AI音频生成、编辑和处理工具，创造美妙声音",
+      "color": "#FFB347",
+      "tools": [
+        {
+          "name": "ElevenLabs",
+          "description": "顶级AI语音合成和克隆工具",
+          "url": "https://elevenlabs.io",
+          "recommended": true,
+          "level": "intermediate",
+          "tags": ["语音合成", "克隆", "多语言"],
+          "pros": ["语音质量顶级", "情感表达丰富", "多语言支持", "克隆效果逼真"],
+          "cons": ["价格较高", "伦理争议", "使用限制", "需要高质量样本"],
+          "learningResources": [
+            "ElevenLabs文档: https://docs.elevenlabs.io/",
+            "语音克隆指南: https://elevenlabs.io/blog/voice-cloning-guide",
+            "API集成教程: https://elevenlabs.io/docs/api-reference"
+          ]
+        },
+        {
+          "name": "Mubert",
+          "description": "AI音乐生成平台，实时创作背景音乐",
+          "url": "https://mubert.com",
+          "recommended": true,
+          "level": "beginner",
+          "tags": ["音乐生成", "背景音", "实时"],
+          "pros": ["实时生成", "版权清晰", "风格多样", "API友好"],
+          "cons": ["创意性有限", "音乐质量一般", "个性化不足", "主要适合背景音"],
+          "learningResources": [
+            "Mubert API文档: https://docs.mubert.com/",
+            "音乐生成指南: https://mubert.com/blog/",
+            "商业使用案例: https://mubert.com/business"
+          ]
+        },
+        {
+          "name": "AIVA",
+          "description": "AI作曲家，创作古典和现代音乐",
+          "url": "https://www.aiva.ai",
+          "recommended": false,
+          "level": "intermediate",
+          "tags": ["作曲", "古典", "原创"],
+          "pros": ["作曲专业", "风格多样", "可编辑性强", "版权归属清晰"],
+          "cons": ["学习成本高", "价格昂贵", "主要面向专业用户", "生成时间长"],
+          "learningResources": [
+            "AIVA学院: https://www.aiva.ai/academy",
+            "作曲技巧: https://www.aiva.ai/blog",
+            "音乐理论基础: https://www.aiva.ai/music-theory"
+          ]
+        },
+        {
+          "name": "Speechify",
+          "description": "AI文本转语音工具，支持多种声音",
+          "url": "https://speechify.com",
+          "recommended": true,
+          "level": "beginner",
+          "tags": ["文本转语音", "阅读", "学习"],
+          "pros": ["声音自然", "速度可调", "多平台支持", "学习辅助功能强"],
+          "cons": ["高级功能需付费", "语音选择有限", "中文支持一般", "离线功能受限"],
+          "learningResources": [
+            "Speechify帮助中心: https://help.speechify.com/",
+            "学习效率提升: https://speechify.com/blog/",
+            "无障碍阅读指南: https://speechify.com/accessibility"
+          ]
+        },
+        {
+          "name": "Udio",
+          "description": "AI音乐创作平台，支持歌词和旋律生成",
+          "url": "https://www.udio.com",
+          "recommended": true,
+          "level": "beginner",
+          "tags": ["音乐创作", "歌词", "旋律"],
+          "pros": ["音乐质量高", "创作自由度大", "支持歌词", "用户界面友好"],
+          "cons": ["仍在测试阶段", "生成时间较长", "风格相对有限", "商业使用限制"],
+          "learningResources": [
+            "Udio使用指南: https://www.udio.com/help",
+            "音乐创作技巧: https://www.udio.com/blog",
+            "社区分享: https://discord.gg/udio"
+          ]
+        },
+        {
+          "name": "Adobe Podcast",
+          "description": "AI音频增强和录制工具",
+          "url": "https://podcast.adobe.com",
+          "recommended": false,
+          "level": "intermediate",
+          "tags": ["播客", "增强", "录制"],
+          "pros": ["音频增强专业", "降噪效果好", "免费使用", "操作简单"],
+          "cons": ["功能相对单一", "主要面向播客", "处理时间长", "文件大小限制"],
+          "learningResources": [
+            "Adobe Podcast教程: https://podcast.adobe.com/enhance",
+            "音频制作指南: https://www.adobe.com/products/audition/",
+            "播客制作流程: https://blog.adobe.com/en/topics/audio"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "avatar",
+      "name": "数字人",
+      "icon": "👤",
+      "description": "AI数字人和虚拟形象生成工具，打造专属虚拟助手",
+      "color": "#FFA07A",
+      "tools": [
+        {
+          "name": "D-ID",
+          "description": "AI数字人视频生成平台",
+          "url": "https://www.d-id.com",
+          "recommended": true,
+          "level": "beginner",
+          "tags": ["数字人", "视频", "演示"],
+          "pros": ["操作简单", "效果逼真", "多语言支持", "API集成方便"],
+          "cons": ["价格较高", "视频长度限制", "人物选择有限", "表情不够丰富"],
+          "learningResources": [
+            "D-ID官方教程: https://docs.d-id.com/",
+            "数字人制作指南: https://www.d-id.com/blog/",
+            "API集成文档: https://docs.d-id.com/reference"
+          ]
+        },
+        {
+          "name": "HeyGen",
+          "description": "AI虚拟主播和数字人制作工具",
+          "url": "https://www.heygen.com",
+          "recommended": true,
+          "level": "intermediate",
+          "tags": ["虚拟主播", "多语言", "商业"],
+          "pros": ["虚拟主播专业", "多语言配音", "商业化成熟", "定制化程度高"],
+          "cons": ["价格昂贵", "学习成本高", "需要高质量素材", "生成时间长"],
+          "learningResources": [
+            "HeyGen学院: https://help.heygen.com/",
+            "虚拟主播制作: https://www.heygen.com/blog/",
+            "企业解决方案: https://www.heygen.com/enterprise"
+          ]
+        },
+        {
+          "name": "Synthesia",
+          "description": "AI虚拟主播视频制作平台",
+          "url": "https://www.synthesia.io",
+          "recommended": true,
+          "level": "intermediate",
+          "tags": ["虚拟主播", "培训", "多语言"],
+          "pros": ["企业级功能", "多语言支持", "模板丰富", "品牌定制"],
+          "cons": ["价格高昂", "创意性有限", "依赖预设模板", "个性化不足"],
+          "learningResources": [
+            "Synthesia培训: https://help.synthesia.io/",
+            "企业培训案例: https://www.synthesia.io/case-studies",
+            "最佳实践指南: https://www.synthesia.io/blog/"
+          ]
+        },
+        {
+          "name": "Ready Player Me",
+          "description": "3D虚拟形象创建平台",
+          "url": "https://readyplayer.me",
+          "recommended": false,
+          "level": "beginner",
+          "tags": ["3D头像", "游戏", "社交"],
+          "pros": ["3D效果好", "跨平台兼容", "免费使用", "开发者友好"],
+          "cons": ["主要面向游戏", "功能相对简单", "商业应用有限", "定制选项少"],
+          "learningResources": [
+            "Ready Player Me文档: https://docs.readyplayer.me/",
+            "开发者指南: https://readyplayer.me/developers",
+            "集成教程: https://docs.readyplayer.me/ready-player-me/integration-guides"
+          ]
+        },
+        {
+          "name": "MetaHuman",
+          "description": "Epic Games的高质量数字人创建工具",
+          "url": "https://www.unrealengine.com/en-US/metahuman",
+          "recommended": false,
+          "level": "advanced",
+          "tags": ["高质量", "游戏", "影视"],
+          "pros": ["质量极高", "细节丰富", "专业级工具", "Unreal引擎集成"],
+          "cons": ["技术门槛极高", "硬件要求高", "学习成本巨大", "主要面向专业用户"],
+          "learningResources": [
+            "MetaHuman官方文档: https://docs.unrealengine.com/5.0/en-US/metahuman-creator/",
+            "Unreal引擎教程: https://www.unrealengine.com/en-US/onlinelearning",
+            "数字人制作流程: https://www.unrealengine.com/en-US/blog/"
+          ]
+        },
+        {
+          "name": "Reallusion",
+          "description": "专业的3D角色和动画制作平台",
+          "url": "https://www.reallusion.com",
+          "recommended": false,
+          "level": "advanced",
+          "tags": ["3D动画", "专业", "角色"],
+          "pros": ["专业功能全面", "动画效果好", "角色库丰富", "工作流完整"],
+          "cons": ["价格昂贵", "学习曲线陡峭", "硬件要求高", "主要面向专业用户"],
+          "learningResources": [
+            "Reallusion学院: https://www.reallusion.com/learning-center/",
+            "3D动画教程: https://www.reallusion.com/tutorial/",
+            "专业工作流: https://www.reallusion.com/blog/"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "browser",
+      "name": "浏览器",
+      "icon": "🌐",
+      "description": "AI增强的浏览器工具和插件，提升网页浏览体验",
+      "color": "#87CEEB",
+      "tools": [
+        {
+          "name": "Arc Browser",
+          "description": "集成AI功能的现代浏览器",
+          "url": "https://arc.net",
+          "recommended": true,
+          "level": "beginner",
+          "tags": ["浏览器", "AI集成", "现代"],
+          "pros": ["界面现代", "AI功能集成", "工作空间管理", "隐私保护好"],
+          "cons": ["仅支持Mac", "学习成本高", "扩展支持有限", "同步功能不完善"],
+          "learningResources": [
+            "Arc使用指南: https://resources.arc.net/",
+            "生产力技巧: https://arc.net/blog/",
+            "社区讨论: https://community.arc.net/"
+          ]
+        },
+        {
+          "name": "Perplexity",
+          "description": "AI搜索引擎，提供准确答案和来源",
+          "url": "https://www.perplexity.ai",
+          "recommended": true,
+          "level": "beginner",
+          "tags": ["搜索", "问答", "来源"],
+          "pros": ["答案准确", "来源可靠", "实时信息", "界面简洁"],
+          "cons": ["功能相对单一", "深度分析有限", "中文支持一般", "免费版限制多"],
+          "learningResources": [
+            "Perplexity使用技巧: https://blog.perplexity.ai/",
+            "搜索优化指南: https://docs.perplexity.ai/",
+            "学术研究应用: https://www.perplexity.ai/hub/blog"
+          ]
+        },
+        {
+          "name": "Monica",
+          "description": "浏览器AI助手插件",
+          "url": "https://monica.im",
+          "recommended": true,
+          "level": "beginner",
+          "tags": ["插件", "助手", "多功能"],
+          "pros": ["功能全面", "多AI模型支持", "操作便捷", "价格合理"],
+          "cons": ["界面略显复杂", "某些功能不稳定", "隐私担忧", "依赖网络"],
+          "learningResources": [
+            "Monica使用教程: https://monica.im/blog/",
+            "功能介绍: https://monica.im/features",
+            "最佳实践: https://help.monica.im/"
+          ]
+        },
+        {
+          "name": "Sider",
+          "description": "侧边栏AI助手，支持多种AI模型",
+          "url": "https://sider.ai",
+          "recommended": false,
+          "level": "beginner",
+          "tags": ["侧边栏", "多模型", "便捷"],
+          "pros": ["多模型支持", "侧边栏便捷", "功能丰富", "免费版可用"],
+          "cons": ["界面设计一般", "功能重复", "稳定性有待提高", "客服响应慢"],
+          "learningResources": [
+            "Sider帮助中心: https://sider.ai/help",
+            "使用技巧: https://sider.ai/blog/",
+            "模型对比: https://sider.ai/models"
+          ]
+        },
+        {
+          "name": "Merlin",
+          "description": "ChatGPT浏览器扩展，支持网页总结",
+          "url": "https://merlin.foyer.work",
+          "recommended": true,
+          "level": "beginner",
+          "tags": ["ChatGPT", "总结", "扩展"],
+          "pros": ["网页总结准确", "快捷键便捷", "多场景应用", "免费版功能丰富"],
+          "cons": ["依赖ChatGPT", "某些网站不兼容", "功能相对单一", "更新频率一般"],
+          "learningResources": [
+            "Merlin使用指南: https://merlin.foyer.work/blog/",
+            "快捷键大全: https://help.getmerlin.in/",
+            "应用场景: https://merlin.foyer.work/use-cases"
+          ]
+        },
+        {
+          "name": "Wiseone",
+          "description": "AI阅读助手，提供网页内容增强",
+          "url": "https://wiseone.io",
+          "recommended": false,
+          "level": "beginner",
+          "tags": ["阅读", "增强", "理解"],
+          "pros": ["阅读体验好", "内容增强有用", "学习辅助强", "界面简洁"],
+          "cons": ["功能相对有限", "支持语言少", "免费版限制多", "更新较慢"],
+          "learningResources": [
+            "Wiseone教程: https://wiseone.io/blog/",
+            "阅读技巧: https://help.wiseone.io/",
+            "学习方法: https://wiseone.io/learning-tips"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "programming",
+      "name": "编程",
+      "icon": "💻",
+      "description": "AI编程助手和代码生成工具，提升开发效率",
+      "color": "#98FB98",
+      "tools": [
+        {
+          "name": "GitHub Copilot",
+          "description": "GitHub官方AI编程助手",
+          "url": "https://github.com/features/copilot",
+          "recommended": true,
+          "level": "intermediate",
+          "tags": ["代码补全", "GitHub", "多语言"],
+          "pros": ["代码质量高", "多语言支持", "IDE集成好", "学习能力强"],
+          "cons": ["需要付费", "版权争议", "有时建议不准确", "依赖网络"],
+          "learningResources": [
+            "Copilot官方文档: https://docs.github.com/en/copilot",
+            "最佳实践: https://github.blog/2023-06-20-how-to-write-better-prompts-for-github-copilot/",
+            "编程技巧: https://github.com/features/copilot/plans"
+          ]
+        },
+        {
+          "name": "Cursor",
+          "description": "AI驱动的代码编辑器",
+          "url": "https://cursor.sh",
+          "recommended": true,
+          "level": "beginner",
+          "tags": ["编辑器", "AI集成", "智能"],
+          "pros": ["AI集成深度", "界面现代", "响应速度快", "功能创新"],
+          "cons": ["相对较新", "插件生态有限", "某些功能不稳定", "学习资源少"],
+          "learningResources": [
+            "Cursor文档: https://docs.cursor.sh/",
+            "使用教程: https://cursor.sh/blog/",
+            "社区讨论: https://github.com/getcursor/cursor"
+          ]
+        },
+        {
+          "name": "Replit",
+          "description": "在线编程平台，集成AI助手",
+          "url": "https://replit.com",
+          "recommended": true,
+          "level": "beginner",
+          "tags": ["在线编程", "协作", "学习"],
+          "pros": ["无需配置", "协作功能强", "学习友好", "部署简单"],
+          "cons": ["性能有限", "网络依赖", "高级功能需付费", "调试功能有限"],
+          "learningResources": [
+            "Replit文档: https://docs.replit.com/",
+            "编程教程: https://replit.com/learn",
+            "社区项目: https://replit.com/community"
+          ]
+        },
+        {
+          "name": "Tabnine",
+          "description": "AI代码补全工具，支持多种IDE",
+          "url": "https://www.tabnine.com",
+          "recommended": false,
+          "level": "intermediate",
+          "tags": ["代码补全", "IDE", "效率"],
+          "pros": ["IDE支持广泛", "本地运行选项", "隐私保护好", "自定义模型"],
+          "cons": ["免费版功能有限", "补全质量一般", "学习成本高", "价格较高"],
+          "learningResources": [
+            "Tabnine文档: https://docs.tabnine.com/",
+            "集成指南: https://www.tabnine.com/install",
+            "最佳实践: https://www.tabnine.com/blog/"
+          ]
+        },
+        {
+          "name": "Codeium",
+          "description": "免费的AI代码助手",
+          "url": "https://codeium.com",
+          "recommended": true,
+          "level": "beginner",
+          "tags": ["免费", "代码补全", "多语言"],
+          "pros": ["完全免费", "功能丰富", "多IDE支持", "响应速度快"],
+          "cons": ["相对较新", "社区较小", "某些功能不够成熟", "文档有限"],
+          "learningResources": [
+            "Codeium文档: https://codeium.com/docs",
+            "安装指南: https://codeium.com/download",
+            "使用技巧: https://codeium.com/blog"
+          ]
+        },
+        {
+          "name": "Amazon CodeWhisperer",
+          "description": "亚马逊的AI代码生成工具",
+          "url": "https://aws.amazon.com/codewhisperer/",
+          "recommended": false,
+          "level": "intermediate",
+          "tags": ["AWS", "代码生成", "企业"],
+          "pros": ["AWS集成好", "安全扫描", "企业级功能", "免费个人版"],
+          "cons": ["主要面向AWS", "功能相对有限", "学习成本高", "依赖AWS生态"],
+          "learningResources": [
+            "CodeWhisperer文档: https://docs.aws.amazon.com/codewhisperer/",
+            "AWS开发指南: https://aws.amazon.com/developer/",
+            "最佳实践: https://aws.amazon.com/blogs/devops/"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "knowledge",
+      "name": "知识库",
+      "icon": "📚",
+      "description": "AI知识管理和问答系统，构建智能知识库",
+      "color": "#DDA0DD",
+      "tools": [
+        {
+          "name": "Notion AI",
+          "description": "集成AI的知识管理平台",
+          "url": "https://www.notion.so/product/ai",
+          "recommended": true,
+          "level": "beginner",
+          "tags": ["知识管理", "笔记", "协作"],
+          "pros": ["功能全面", "团队协作强", "模板丰富", "AI集成深度"],
+          "cons": ["学习成本高", "价格较高", "性能有时较慢", "复杂项目管理困难"],
+          "learningResources": [
+            "Notion官方指南: https://www.notion.so/help",
+            "模板库: https://www.notion.so/templates",
+            "生产力技巧: https://www.notion.so/guides"
+          ]
+        },
+        {
+          "name": "Obsidian",
+          "description": "支持AI插件的知识图谱工具",
+          "url": "https://obsidian.md",
+          "recommended": true,
+          "level": "intermediate",
+          "tags": ["知识图谱", "本地", "插件"],
+          "pros": ["本地存储", "插件生态丰富", "知识图谱强大", "完全免费"],
+          "cons": ["学习曲线陡峭", "界面相对复杂", "移动端体验一般", "同步需付费"],
+          "learningResources": [
+            "Obsidian帮助文档: https://help.obsidian.md/",
+            "插件开发: https://docs.obsidian.md/",
+            "社区论坛: https://forum.obsidian.md/"
+          ]
+        },
+        {
+          "name": "Logseq",
+          "description": "开源的本地优先知识管理工具",
+          "url": "https://logseq.com",
+          "recommended": true,
+          "level": "intermediate",
+          "tags": ["开源", "本地", "隐私"],
+          "pros": ["完全开源", "隐私保护好", "块级编辑", "双向链接"],
+          "cons": ["功能相对简单", "学习资源少", "插件生态小", "界面不够现代"],
+          "learningResources": [
+            "Logseq文档: https://docs.logseq.com/",
+            "使用指南: https://blog.logseq.com/",
+            "GitHub仓库: https://github.com/logseq/logseq"
+          ]
+        },
+        {
+          "name": "Roam Research",
+          "description": "双向链接的知识管理工具",
+          "url": "https://roamresearch.com",
+          "recommended": false,
+          "level": "advanced",
+          "tags": ["双向链接", "研究", "思维"],
+          "pros": ["双向链接强大", "思维网络清晰", "研究友好", "创新理念"],
+          "cons": ["价格昂贵", "学习成本极高", "界面复杂", "性能问题"],
+          "learningResources": [
+            "Roam官方教程: https://roamresearch.com/#/app/help",
+            "社区资源: https://www.roamtips.com/",
+            "研究方法: https://nesslabs.com/roam-research"
+          ]
+        },
+        {
+          "name": "RemNote",
+          "description": "结合间隔重复的知识管理工具",
+          "url": "https://www.remnote.com",
+          "recommended": false,
+          "level": "intermediate",
+          "tags": ["间隔重复", "学习", "记忆"],
+          "pros": ["间隔重复集成", "学习效果好", "层级结构清晰", "学术友好"],
+          "cons": ["学习成本高", "界面复杂", "功能过于专业", "价格较高"],
+          "learningResources": [
+            "RemNote大学: https://www.remnote.com/university",
+            "学习方法: https://help.remnote.com/",
+            "社区讨论: https://forum.remnote.com/"
+          ]
+        },
+        {
+          "name": "Mem",
+          "description": "AI驱动的个人知识助手",
+          "url": "https://mem.ai",
+          "recommended": false,
+          "level": "intermediate",
+          "tags": ["个人助手", "智能", "搜索"],
+          "pros": ["AI功能强大", "自动整理", "搜索准确", "界面简洁"],
+          "cons": ["价格昂贵", "功能相对单一", "依赖网络", "数据安全担忧"],
+          "learningResources": [
+            "Mem使用指南: https://mem.ai/help",
+            "AI功能介绍: https://mem.ai/blog/",
+            "最佳实践: https://mem.ai/guides"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "agent",
+      "name": "Agent",
+      "icon": "🤖",
+      "description": "AI智能体和自动化工具，让AI为你工作",
+      "color": "#F0E68C",
+      "tools": [
+        {
+          "name": "AutoGPT",
+          "description": "自主执行任务的AI智能体",
+          "url": "https://github.com/Significant-Gravitas/AutoGPT",
+          "recommended": true,
+          "level": "advanced",
+          "tags": ["自主执行", "开源", "任务"],
+          "pros": ["完全开源", "自主性强", "功能强大", "社区活跃"],
+          "cons": ["技术门槛高", "稳定性不足", "成本较高", "需要技术背景"],
+          "learningResources": [
+            "AutoGPT文档: https://docs.agpt.co/",
+            "GitHub仓库: https://github.com/Significant-Gravitas/AutoGPT",
+            "社区论坛: https://discord.gg/autogpt"
+          ]
+        },
+        {
+          "name": "LangChain",
+          "description": "构建AI应用的开发框架",
+          "url": "https://langchain.com",
+          "recommended": false,
+          "level": "advanced",
+          "tags": ["开发框架", "应用构建", "链式"],
+          "pros": ["框架完整", "文档详细", "社区大", "扩展性强"],
+          "cons": ["学习成本极高", "更新频繁", "复杂度高", "主要面向开发者"],
+          "learningResources": [
+            "LangChain文档: https://python.langchain.com/docs/get_started/introduction",
+            "教程合集: https://github.com/langchain-ai/langchain",
+            "实战案例: https://blog.langchain.dev/"
+          ]
+        },
+        {
+          "name": "Zapier AI",
+          "description": "AI驱动的自动化工作流平台",
+          "url": "https://zapier.com/ai",
+          "recommended": true,
+          "level": "intermediate",
+          "tags": ["自动化", "工作流", "集成"],
+          "pros": ["集成应用多", "操作简单", "稳定性好", "商业化成熟"],
+          "cons": ["价格较高", "复杂逻辑有限", "依赖第三方服务", "自定义程度低"],
+          "learningResources": [
+            "Zapier大学: https://zapier.com/university/",
+            "自动化指南: https://zapier.com/blog/",
+            "工作流模板: https://zapier.com/apps"
+          ]
+        },
+        {
+          "name": "Make (Integromat)",
+          "description": "可视化自动化平台",
+          "url": "https://www.make.com",
+          "recommended": true,
+          "level": "intermediate",
+          "tags": ["可视化", "自动化", "集成"],
+          "pros": ["可视化界面", "功能强大", "价格合理", "错误处理好"],
+          "cons": ["学习成本中等", "某些集成有限", "文档不够详细", "中文支持一般"],
+          "learningResources": [
+            "Make学院: https://www.make.com/en/academy",
+            "模板库: https://www.make.com/en/templates",
+            "社区论坛: https://community.make.com/"
+          ]
+        },
+        {
+          "name": "n8n",
+          "description": "开源的工作流自动化工具",
+          "url": "https://n8n.io",
+          "recommended": true,
+          "level": "advanced",
+          "tags": ["开源", "自托管", "灵活"],
+          "pros": ["完全开源", "自托管选项", "高度可定制", "无使用限制"],
+          "cons": ["技术门槛高", "需要服务器", "学习成本高", "社区相对较小"],
+          "learningResources": [
+            "n8n文档: https://docs.n8n.io/",
+            "工作流示例: https://n8n.io/workflows/",
+            "社区论坛: https://community.n8n.io/"
+          ]
+        },
+        {
+          "name": "Microsoft Power Automate",
+          "description": "微软的AI自动化平台",
+          "url": "https://powerautomate.microsoft.com",
+          "recommended": false,
+          "level": "intermediate",
+          "tags": ["微软", "企业", "自动化"],
+          "pros": ["微软生态集成", "企业级功能", "安全性高", "AI功能丰富"],
+          "cons": ["主要面向企业", "价格较高", "学习成本高", "依赖微软生态"],
+          "learningResources": [
+            "Power Automate文档: https://docs.microsoft.com/en-us/power-automate/",
+            "学习路径: https://docs.microsoft.com/en-us/learn/powerplatform/",
+            "社区资源: https://powerusers.microsoft.com/t5/Microsoft-Power-Automate/ct-p/MPACommunity"
+          ]
+        }
+      ]
+    }
+  ]
+}
